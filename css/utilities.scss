@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 
 /*
 font-family: 'Open Sans', sans-serif;
@@ -298,6 +298,24 @@ $black: #000000;
 }
 .cg-newspaper:before {
   content: "\3d";
+}
+.cg-card:before {
+  content: "\3e";
+}
+.cg-post:before {
+  content: "\3f";
+}
+.cg-whatsapp:before {
+  content: "\40";
+}
+.cg-facebook:before {
+  content: "\5b";
+}
+.cg-instagram:before {
+  content: "\5d";
+}
+.cg-linkedin:before {
+  content: "\5e";
 }
 
 /* -------------------------------------
