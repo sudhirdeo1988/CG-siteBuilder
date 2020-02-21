@@ -433,7 +433,7 @@ html {
   position: absolute;
 }
 
-.relative, .sb-postListing .postItem .post_info, .featuresList, .sb-blankCard .heading .addBtn .icon, .sb-blankCard .navList .navItem, .sb-blankCard, .sb-pageTile, .sb-card01, .sb-bodySection .sb-section .sb-mainBody, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav .navItem .upDownKey, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav .navItem .chkBox, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav .navItem, .sb-bodySection .sb-headerTitle, .sb-bodySection, .sb-headerBlock .sb-header, .sb-headerBlock {
+.relative, .sb-cardOptions, .sb-postListing .postItem .post_info, .featuresList, .sb-blankCard .heading .addBtn .icon, .sb-blankCard .navList .navItem, .sb-blankCard, .sb-pageTile, .sb-card01, .sb-bodySection .sb-section .sb-mainBody, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav .navItem .upDownKey, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav .navItem .chkBox, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav .navItem, .sb-bodySection .sb-headerTitle, .sb-bodySection, .sb-headerBlock .sb-header, .sb-headerBlock {
   position: relative;
 }
 
@@ -449,7 +449,7 @@ html {
   visibility: hidden;
 }
 
-.block, .featuresList .featureItem .title, .featuresList, .sb-blankCard .heading, .sb-blankCard .navList .navItem, .sb-blankCard .navList, .sb-blankCard, .sb-pageTile, .sb-card01, .sb-tabs, .sb-bodySection .sb-section .sb-mainBody .bodyTitle, .sb-bodySection .sb-section .sb-mainBody, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav .navItem .navText, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav .navItem, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav, .sb-bodySection .sb-section .sb-sidebar, .sb-bodySection .sb-headerTitle, .sb-bodySection, .sb-headerBlock .sb-header .sb-logo img, .sb-headerBlock .sb-header .sb-logo, .sb-headerBlock .sb-header, .sb-headerBlock {
+.block, .sb-cardOptions .cardOptions ul li, .sb-cardOptions .cardOptions ul, .sb-cardOptions, .featuresList .featureItem .title, .featuresList, .sb-blankCard .heading, .sb-blankCard .navList .navItem, .sb-blankCard .navList, .sb-blankCard, .sb-pageTile, .sb-card01, .sb-tabs, .sb-bodySection .sb-section .sb-mainBody .bodyTitle, .sb-bodySection .sb-section .sb-mainBody, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav .navItem .navText, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav .navItem, .sb-bodySection .sb-section .sb-sidebar .sb-sidebarNav, .sb-bodySection .sb-section .sb-sidebar, .sb-bodySection .sb-headerTitle, .sb-bodySection, .sb-headerBlock .sb-header .sb-logo img, .sb-headerBlock .sb-header .sb-logo, .sb-headerBlock .sb-header, .sb-headerBlock {
   display: block;
 }
 
@@ -537,7 +537,7 @@ html {
   width: 100%;
 }
 
-.nopad, .sb-blankCard .navList .navItem .editItem {
+.pad0, .sb-cardOptions .cardOptions ul, .sb-blankCard .navList .navItem .editItem {
   padding: 0;
 }
 
@@ -613,7 +613,7 @@ html {
   padding-bottom: 15px;
 }
 
-.pad20-bottom {
+.p20-btm {
   padding-bottom: 20px;
 }
 
@@ -637,7 +637,7 @@ html {
   padding-left: 20px;
 }
 
-.nomargin {
+.m0, .sb-cardOptions .cardOptions ul {
   margin: 0;
 }
 
@@ -713,7 +713,7 @@ html {
   margin-bottom: 15px;
 }
 
-.m20-btm, .sb-blankCard .navList {
+.m20-btm, .sb-cardOptions, .sb-blankCard .navList {
   margin-bottom: 20px;
 }
 
@@ -1363,6 +1363,51 @@ html {
   font-weight: 600;
   font-size: 15px;
   line-height: 13px;
+}
+
+.sb-cardOptions {
+  height: auto;
+  overflow: hidden;
+}
+.sb-cardOptions .cardOptions ul li {
+  box-sizing: border-box;
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin-right: 5px;
+}
+.sb-cardOptions .cardOptions ul li .cardOption {
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  display: block;
+  height: 100px;
+  width: 100px;
+  padding: 0;
+  outline: none;
+  text-align: center;
+}
+.sb-cardOptions .cardOptions ul li .cardOption.st-active {
+  border-color: #980000;
+}
+.sb-cardOptions .cardOptions ul li .cardOption img {
+  height: 94px;
+  width: 94px;
+}
+
+.colorPallet .form-control {
+  display: inline-block;
+  padding: 0;
+  height: 42px;
+  width: 42px;
+}
+
+.divider {
+  background-color: #D7D7E0;
+  display: block;
+  position: relative;
+  margin: 15px -24px;
+  height: 1px;
+  width: calc(100% + 48px);
 }
 
 /*# sourceMappingURL=css-styles.css.map */
