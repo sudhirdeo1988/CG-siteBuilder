@@ -325,12 +325,38 @@
     height: 42px;
     outline: none;
     border-radius: 2px;
-    box-shadow: none;
+		box-shadow: none;
+
+		&.lg{
+			resize: none;
+			height: 120px;
+		}
 
     &::placeholder {
       color: #c1cee2;
     }
   }
+}
+
+.sb-dropdown{
+	.btn{
+		color: $textColor;
+		box-sizing: border-box;
+		height: 42px;
+		border: 1px solid #E6ECF5;
+		text-align: left;
+		font-size: 13px;
+		line-height: 18px;
+		padding: 10px 12px;
+		width: 100%;
+		@extend .relative;
+
+		&::after{
+			position: absolute;
+			right: 7px;
+			top: 20px;
+		}
+	}
 }
 
 /* ------- Blank Card ----------- */
@@ -340,7 +366,18 @@
   padding: 20px 24px;
   @extend .block;
   @extend .relative;
-  @include rounded-corners(5px);
+	@include rounded-corners(5px);
+
+	.cardInfo{
+		color: $textColor;
+		display: block;
+		font-size: 14px;
+		line-height: 19px;
+
+			a{
+				display: inline-block;
+			}
+	}
 
   .navList {
     @extend .block;
@@ -763,4 +800,107 @@
 	margin: 15px -24px;
 	height: 1px;
 	width: calc(100% + 48px);
+}
+
+
+/* -------------- Card 01 ------------- */
+$card01-color-1:#8BCFAF;
+$card01-color-2:#31343A;
+$card01-color-3:#cccccc;
+.sb-card-01{
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	background-color: #f2f2f5;
+	margin-bottom: 20px;
+	border-radius: 4px;
+
+		.cardheader,
+		.cardfooter{
+			padding: 10px 0;
+			background: $card01-color-1;
+			height: 70px;
+			border-radius: 4px 4px 0 0;
+		}
+		.cardfooter{
+			border-radius: 0 0 4px 4px;
+		}
+		.cardbody{
+			background-color: $card01-color-2;
+			align-items: center;
+			justify-content: center;
+			padding: 45px;
+
+				.s_1{
+					height: 45px;
+					width: 45px;
+					margin: 0 auto 20px;
+					text-align: center;
+
+						img{
+							color: #fff;
+							height: 45px;
+							width: 45px;
+						}
+				}
+				.s_2{
+					display: block;
+					color: $card01-color-3;
+					font-size: 13px;
+					letter-spacing: 1.6px;
+					line-height: 17px;
+					text-align: center;
+					margin-bottom: 15px;
+				}
+				.s_3{
+					display: block;
+					color: $card01-color-1;
+					font-size: 40px;
+					letter-spacing: 1.5px;
+					line-height: 42px;
+					text-align: center;
+					text-transform: uppercase;
+					font-weight: 700;
+					margin-bottom: 20px;
+				}
+				.s_4{
+					display: block;
+					color: $card01-color-3;
+					font-size: 12px;
+					letter-spacing: 2.5px;
+					line-height: 16px;
+					text-align: center;
+					margin: -10px 0 0;
+				}
+		}
+}
+
+/* --------- Blog Options ----------- */
+.sb-blogOptions{
+	@extend .block;
+	@extend .relative;
+		.sb-blogItem{
+			cursor: pointer;
+			border: 2px solid#B9BAC9;
+			box-sizing: border-box;
+			@extend .inlineblock;
+			@include transition(all ease 0.3s);
+
+				img{
+					width: 100%;
+					max-width: 300px;
+				}
+				&.st-active,
+				&:hover{
+					border-color: $primaryColor;
+				}
+		}
+}
+.sb-blogPreview{
+	border: 2px solid #B9BAC9;
+	height: 500px;
+	overflow-y: auto;
+	margin-bottom: 50px;
+	@extend .block;
+	@extend .relative;
 }

@@ -28,8 +28,12 @@
       <div class="container height100">
         <div class="sb-headerTitle">
           <div class="row">
-            <div class="col-12">
+            <div class="col-6">
               <h2 class="sb-pageTile">New card image post</h2>
+            </div>
+            <div class="col-6 text-right">
+              <button class="sb-btn st-light">Delete Post</button>
+              <button class="sb-btn sb-btnPrime">Save & Post</button>
             </div>
           </div>
         </div>
@@ -120,11 +124,30 @@
                     <div class="col">
                       <div class="form-group sb-formGroup">
                         <label>Font</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Title"
-                        />
+                        <div class="dropdown sb-dropdown">
+                          <a
+                            class="btn dropdown-toggle"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            Dropdown link
+                          </a>
+
+                          <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -186,7 +209,6 @@
                   </div>
                 </div>
                 <!-- ***** Text Info ***** -->
-
               </div>
             </div>
             <!-- ***** Sidebar End ****** -->
@@ -196,6 +218,29 @@
               <div class="sb-blankCard">
                 <div class="heading">
                   <span>POST</span>
+                </div>
+
+                <!-- ****** Card 01 ******* -->
+                <div class="sb-card-01">
+                  <div class="cardheader"></div>
+                  <div class="cardbody">
+                    <div class="s_1">
+                      <img src="../images/cards/1/like.png" alt="like" />
+                    </div>
+                    <div class="s_2">Stay Connected</div>
+                    <div class="s_3">Happy Social Media Day</div>
+                    <div class="s_2">Share your best stories at</div>
+                    <div class="s_4">www.reallygreatsite.com</div>
+                  </div>
+                  <div class="cardfooter"></div>
+                </div>
+                <!-- ****** Card 01 End ******* -->
+                <div class="cardInfo">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <a href="https://shevade.com/enquire"
+                    >https://shevade.com/enquire</a
+                  >
                 </div>
               </div>
             </div>
@@ -207,6 +252,7 @@
     <!-- *************** Body End *************** -->
 
     <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
   </body>
 </html>

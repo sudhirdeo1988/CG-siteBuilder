@@ -407,8 +407,8 @@ html {
   %text-left {
     text-align: left;
   }
-  .text-right,
-  %text-right {
+  .t-right,
+  %t-right {
     text-align: right;
   }
   .bold,
@@ -476,7 +476,7 @@ html {
 
   .pad0,
   %pad0 {
-    padding: 0;
+    padding: 0 !important;
   }
   .pad5,
   %pad5 {
